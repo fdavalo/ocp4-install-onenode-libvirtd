@@ -38,3 +38,6 @@ install-end.sh :
   - when oc get clusteroperator shows that all but monitoring operators are ok, you can use openshift installer to get rid of bootstrap vm (remove bootstrap etcd member)
   - you can then remove the bootstrap vm
 
+I have set the minimal settings for vm resources, but if you can, it is better to add more memory or cpu if you have some available.
+When the bootstrap vm is deleted, you can switch the resource to the master vm.
+
