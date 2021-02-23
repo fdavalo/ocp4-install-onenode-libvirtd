@@ -1,16 +1,18 @@
 #directory where are installation files
-export ODIR=/media/franck/data/ocp
-export BASE_DOM=cluster
-export CLUSTER_OCTET=198
-export SSH_KEY="/home/franck/.ssh/id_rsa.pub"
-export PULL_SEC=$(cat $ODIR/crc-pull-secret)
-RHNUSER=fdavalo@redhat.com
+export ODIR=... ex: /home/me/ocp4
+export BASE_DOM=... ex: cluster
+export CLUSTER_OCTET=... ex: 198
+export SSH_KEY=... ex: /home/me/.ssh/id_rsa.pub
+export PULL_SEC=... ex: $(cat $ODIR/crc-pull-secret)
+export RHNUSER=... ex: me@redhat.com
 
 export CLUSTER_OCP_VERSION=4.6
 export CLUSTER_OCP_VERSION_MINOR=4.6.8
 
-RHNPASS=$1
+#pass password as parameter
+export RHNPASS=$1
 
+#generated variables
 export CLUSTER_NAME=ocp4-$CLUSTER_OCTET
 
 export EDIR=$ODIR
