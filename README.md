@@ -11,7 +11,8 @@ Potentially in last scripts, run block of commands one by one.
 
 install-env.sh : 
   - you need to fill first parameters with your values
-  - you need to call the script with password for accessing redhat download site
+  - you need to retrieve a pull secret from redhat : cf https://cloud.redhat.com/openshift/create/local
+  - you need to specify a user and password for accessing redhat download site
   - you need to source the script
 
 install-pre.sh : 
